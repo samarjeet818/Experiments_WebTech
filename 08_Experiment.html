@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .blue-text {
+            color: blue;
+            font-weight: bold;
+        }
+        
+        /* ID Selector */
+        #header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* Descendant Selector */
+        .container p {
+            color: green;
+            line-height: 1.8;
+        }
+        
+        .container div p {
+            color: red;
+            font-style: italic;
+        }
+        
+        ul li {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+   
+       
+       
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>CSS Selectors Demonstration</h1>
+    </div>
+    
+    <h2>1. Class Selector</h2>
+    <p class="highlight">This paragraph uses the .highlight class</p>
+    <p class="blue-text">This paragraph uses the .blue-text class</p>
+    
+    <h2>2. ID Selector</h2>
+    <p>The header and footer above/below use ID selectors (#header and #footer)</p>
+    
+    <h2>3. Descendant Selector</h2>
+    <div class="container">
+        <p>This paragraph is a descendant of .container (green)</p>
+        <div>
+            <p>This paragraph is nested deeper (red and italic)</p>
+        </div>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+    
+    <h2>4. Group Selector</h2>
+    <p>All headings (h1, h2, h3) share the same font family and color</p>
+    <h3>This is an h3 heading</h3>
+    
+    <div id="footer">
+    <p>Footer with ID Selector</p>
+    </div>
+</body>
+</html>

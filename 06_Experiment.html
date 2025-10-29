@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Three CSS Methods</title>
+    
+    <!-- EXTERNAL CSS - Link to external stylesheet -->
+    <link rel="stylesheet" href="06_Experiment.css">
+    
+    <!-- INTERNAL CSS - Style tag in head section -->
+    <style>
+        h1 {
+            color: navy;
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+        
+        .internal-style {
+            background-color: #2ecc71;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        #special-box {
+            border: 3px solid hsl(6, 78%, 57%);
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demonstration of Three CSS Methods</h1>
+    
+    <!-- Method 1: INLINE CSS -->
+    <section>
+        <h2>1. Inline CSS Example</h2>
+        <p style="color: red; font-size: 18px; background-color: yellow; padding: 10px;">
+            This paragraph uses <b>INLINE CSS</b> - styles are applied directly using the style attribute.
+        </p>
+        <p style="color: blue; font-weight: bold; border: 2px solid black; padding: 10px;">
+            Another example with inline styling for color, border, and padding.
+        </p>
+    </section>
+    
+    <!-- Method 2: INTERNAL CSS -->
+    <section>
+        <h2>2. Internal CSS Example</h2>
+        <div class="internal-style">
+            This div uses <b>INTERNAL CSS</b> - styles defined in the &lt;style&gt; tag in the head section.
+        </div>
+        <div id="special-box">
+            This div uses an ID selector (#special-box) defined in internal CSS.
+        </div>
+    </section>
+    
+    <!-- Method 3: EXTERNAL CSS -->
+    <section>
+        <h2>3. External CSS Example</h2>
+        <div class="external-style">
+            This div uses <b>EXTERNAL CSS</b> - styles loaded from an external file (style.css).
+        </div>
+    </section>
+    
+    <!-- Combining All Three Methods -->
+    <section>
+        <h2>4. Combining All Three Methods</h2>
+        <div class="external-style" id="special-box" style="font-size: 20px;">
+            This div combines all three CSS methods:
+            <ul>
+                <li>External CSS (background from .external-style)</li>
+                <li>Internal CSS (border from #special-box)</li>
+                <li>Inline CSS (font-size: 20px)</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer style="text-align: center; margin-top: 30px; padding: 20px; background-color: #34495e; color: white;">
+        <p>&copy; 2025 CSS Methods Demonstration</p>
+    </footer>
+</body>
+</html>
